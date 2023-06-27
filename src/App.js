@@ -9,14 +9,17 @@ import MyProfile from './components/MyProfile';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <div className="App">
+      <BrowserRouter>
         <Navmenu />
-        <Route path="/" element={<MyProfile />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/rockets" element={<Rockets />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MyProfile />} />
+          <Route path="/missions" element={<Missions />} />
+          <Route path="/rockets" element={<Rockets />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+
   );
 }
 
