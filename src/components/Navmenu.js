@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navmenu = () => {
+const Navmenu = () => (
   <header>
     <nav>
       <div>
@@ -10,10 +10,9 @@ const Navmenu = () => {
       <ul>
         <NavLink to="/rockets">Rockets</NavLink>
         <NavLink to="/missions">Missions</NavLink>
-        <NavLink to="/myprofile">MyProfile</NavLink>
+        <NavLink to="/">MyProfile</NavLink>
       </ul>
     </nav>
-  </header>;
-};
-
+  </header>
+);
 export default Navmenu;

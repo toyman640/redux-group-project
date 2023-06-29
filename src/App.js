@@ -1,5 +1,5 @@
 import {
-  BrowserRouter, Routes, Route,
+  Routes, Route,
 } from 'react-router-dom';
 import './App.css';
 import Navmenu from './components/Navmenu';
@@ -10,14 +10,12 @@ import MyProfile from './components/MyProfile';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navmenu />
-        <Routes>
-          <Route path="/" element={<MyProfile />} />
-          <Route path="/missions" element={<Missions />} />
-          <Route path="/rockets" element={<Rockets />} />
-        </Routes>
-      </BrowserRouter>
+      <Navmenu />
+      <Routes>
+        <Route path="/" element={<MyProfile />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/rockets" element={<Rockets />} />
+      </Routes>
     </div>
 
   );
