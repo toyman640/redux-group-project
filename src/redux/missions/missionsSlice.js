@@ -19,19 +19,28 @@ export const fetchMissions = createAsyncThunk('misssions/fetchMissions', async (
 export const missionsSlice = createSlice({
   name: 'misssions',
   initialState,
+  reducers: {
+    toggleMissionStatus: (state, action) => {
+      const { missionId, newStatus } = action.payload;
+      const mission = state.missions.find((mission) => mission.id === missionId);
+      if (mission) {
+        mission.status = newStatus;
+      }
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchMissions.fulfilled, (state, action) => {
       const payloadArray = Array.isArray(action.payload) ? action.payload : [];
-      state.missions.push(
-        ...payloadArray.map((mission) => ({
-          id: mission.mission_id,
-          name: mission.mission_name,
-          description: mission.description,
-        })),
-      );
+      const addMissions = payloadArray.slice(0, 7).map((mission) => ({
+        id: mission.mission_id,
+        name: mission.mission_name,
+        description: mission.description,
+        status: false,
+      }));
+      state.missions = addMissions;
     });
   },
 });
-fetchMissions();
 
+export const { toggleMissionStatus } = missionsSlice.actions;
 export default missionsSlice.reducer;
