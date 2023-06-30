@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A test for Missions component renders correctly 1`] = `
+<div>
+  <table
+    className="Mission-table"
+  >
+    <thead>
+      <tr
+        className="Table-head"
+      >
+        <th
+          className="Mission-title"
+        >
+          Mission
+        </th>
+        <th
+          className="Desc-title"
+        >
+          Discription
+        </th>
+        <th
+          className="Desc-title"
+        >
+          Status
+        </th>
+        <th
+          className="Desc-title-2"
+        >
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="Odd-row"
+      >
+        <td
+          className="Mission-name"
+        >
+          Mission 1
+        </td>
+        <td
+          className="Description"
+        >
+          Description 1
+        </td>
+        <td
+          className="Status"
+        >
+          <button
+            className="Active-member"
+            type="button"
+          >
+            Active Member
+          </button>
+        </td>
+        <td
+          className="Status-2"
+        >
+          <button
+            className="Leave-mission"
+            onClick={[Function]}
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr
+        className="Even-row"
+      >
+        <td
+          className="Mission-name"
+        >
+          Mission 2
+        </td>
+        <td
+          className="Description"
+        >
+          Description 2
+        </td>
+        <td
+          className="Status"
+        >
+          <button
+            className="Not-member"
+            type="button"
+          >
+            Not a Member
+          </button>
+        </td>
+        <td
+          className="Status-2"
+        >
+          <button
+            className="Join-mission"
+            onClick={[Function]}
+            type="button"
+          >
+            Join Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

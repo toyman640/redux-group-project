@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
-import { store } from './..store';
+import { store } from '../redux/store';
 import Rockets from '../components/Rockets';
 import Rocket from '../components/Rocket';
 
