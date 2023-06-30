@@ -1,39 +1,88 @@
-.App {
-  text-align: center;
+.Mission-table {
+  border: 1px solid #a9a9a9;
+  width: 95%;
+  margin-left: 2.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Active-member {
+  background-color: aqua;
+  border-radius: 3px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Not-member {
+  background-color: #a9a9a9;
+  border-radius: 3px;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Leave-mission {
+  border: 1px solid red;
+  border-radius: 3px;
+  background: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.Join-mission {
+  border-radius: 3px;
+  background: inherit;
+  border: 1px solid #a9a9a9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.Description {
+  width: 60%;
+  border-right: 1px solid #a9a9a9;
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.Mission-name {
+  border-right: 1px solid #a9a9a9;
+  width: 15%;
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Status {
+  border-right: 1px solid #a9a9a9;
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Status-2 {
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Table-head {
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Mission-title {
+  border-right: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Desc-title {
+  border-right: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Desc-title-2 {
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Profile-missions {
+  border: 1px solid #a9a9a9;
+  width: 20%;
+  margin-left: 3%;
+  height: 50px;
+  border-radius: 2px;
+}
+
+.Missions-label {
+  margin-left: 3%;
+}
+
+.Even-row {
+  background-color: #f0f0f0;
 }
