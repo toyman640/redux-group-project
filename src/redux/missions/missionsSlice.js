@@ -7,7 +7,7 @@ const initialState = {
   missions: [],
 };
 
-export const fetchMissions = createAsyncThunk('misssions/fetchMissions', async () => {
+export const fetchMissions = createAsyncThunk('missions/fetchMissions', async () => {
   try {
     const response = await axios.get(GET_URL);
     return response.data;
@@ -17,15 +17,22 @@ export const fetchMissions = createAsyncThunk('misssions/fetchMissions', async (
 });
 
 export const missionsSlice = createSlice({
-  name: 'misssions',
+  name: 'missions',
   initialState,
   reducers: {
-    toggleMissionStatus: (state, action) => {
-      const { missionId, newStatus } = action.payload;
-      const mission = state.missions.find((mission) => mission.id === missionId);
-      if (mission) {
-        mission.status = newStatus;
-      }
+    joinMission: (state, action) => {
+      const missionId = action.payload;
+      state.missions = state.missions.map((mission) => {
+        if (mission.id !== missionId) return mission;
+        return { ...mission, reserved: true };
+      });
+    },
+    leaveMission: (state, action) => {
+      const missionId = action.payload;
+      state.missions = state.missions.map((mission) => {
+        if (mission.id !== missionId) return mission;
+        return { ...mission, reserved: false };
+      });
     },
   },
   extraReducers: (builder) => {
@@ -35,12 +42,12 @@ export const missionsSlice = createSlice({
         id: mission.mission_id,
         name: mission.mission_name,
         description: mission.description,
-        status: false,
+        reserved: false,
       }));
       state.missions = addMissions;
     });
   },
 });
 
-export const { toggleMissionStatus } = missionsSlice.actions;
+export const { joinMission, leaveMission } = missionsSlice.actions;
 export default missionsSlice.reducer;

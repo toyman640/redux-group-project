@@ -1,20 +1,18 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../redux/missions/missionsSlice';
+import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
-  const dispatch = useDispatch();
   const { missions } = useSelector((state) => state.missions);
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
   return (
     <div>
-      <h1>MyProfile</h1>
-      {missions.filter((mission) => mission.status).map((mission) => (
-        <tr key={mission.id}>
-          <td>{mission.name}</td>
-        </tr>
+      <h3 className="Missions-label">My Missions</h3>
+      {missions.filter((mission) => mission.reserved).map((mission) => (
+        <table className="Profile-missions" key={mission.id}>
+          <tbody>
+            <tr>
+              <td>{mission.name}</td>
+            </tr>
+          </tbody>
+        </table>
       ))}
     </div>
   );
