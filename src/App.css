@@ -73,7 +73,7 @@
 
 .Profile-missions {
   border: 1px solid #a9a9a9;
-  width: 200px;
+  width: 70%;
   margin-block: 10px;
   height: 50px;
   border-radius: 2px;
@@ -211,4 +211,6 @@ nav {
 
 .mission-joined {
   padding: 10px;
+  width: 40%;
+  margin-left: 2%;
 }
