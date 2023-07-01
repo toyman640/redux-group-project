@@ -6,9 +6,11 @@ import '../App.css';
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions.missions);
+  const missionCount = missions.length;
   useEffect(() => {
+    if (missionCount > 0) return;
     dispatch(fetchMissions());
-  }, [dispatch]);
+  }, [dispatch, missionCount]);
   const handleMission = (missionId, currentStatus) => {
     if (currentStatus) {
       dispatch(leaveMission(missionId));

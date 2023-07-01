@@ -42,8 +42,6 @@
   </ul>
 </details>
 
-### Live Demo <a name="live-demo"></a>
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
