@@ -73,14 +73,10 @@
 
 .Profile-missions {
   border: 1px solid #a9a9a9;
-  width: 20%;
-  margin-left: 3%;
+  width: 200px;
+  margin-block: 10px;
   height: 50px;
   border-radius: 2px;
-}
-
-.Missions-label {
-  margin-left: 3%;
 }
 
 .Even-row {
@@ -195,6 +191,7 @@ nav {
 
 .rocket-booked {
   padding: 10px;
+  width: 30%;
 }
 
 .py {
@@ -205,4 +202,13 @@ nav {
   font-size: 1.2rem;
   border: 1px solid var(--black);
   margin-block: 10px;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+}
+
+.mission-joined {
+  padding: 10px;
 }

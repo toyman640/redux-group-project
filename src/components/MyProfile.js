@@ -5,8 +5,8 @@ const MyProfile = () => {
   const rockets = useSelector((store) => store.rockets);
   const filteredRockets = rockets.rocket.filter((rocket) => rocket.reserved);
   return (
-    <div>
-      <div>
+    <div className="profile">
+      <div className="mission-joined">
         <h3 className="Missions-label">My Missions</h3>
         {missions.filter((mission) => mission.reserved).map((mission) => (
           <table className="Profile-missions" key={mission.id}>
