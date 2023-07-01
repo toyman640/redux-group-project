@@ -1,0 +1,216 @@
+.Mission-table {
+  border: 1px solid #a9a9a9;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.Active-member {
+  background-color: aqua;
+  border-radius: 3px;
+  border: none;
+}
+
+.Not-member {
+  background-color: #a9a9a9;
+  border-radius: 3px;
+  border: none;
+}
+
+.Leave-mission {
+  border: 1px solid red;
+  border-radius: 3px;
+  background: inherit;
+}
+
+.Join-mission {
+  border-radius: 3px;
+  background: inherit;
+  border: 1px solid #a9a9a9;
+}
+
+.Description {
+  width: 60%;
+  border-right: 1px solid #a9a9a9;
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Mission-name {
+  border-right: 1px solid #a9a9a9;
+  width: 15%;
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Status {
+  border-right: 1px solid #a9a9a9;
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Status-2 {
+  padding: 10px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Table-head {
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Mission-title {
+  border-right: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Desc-title {
+  border-right: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Desc-title-2 {
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.Profile-missions {
+  border: 1px solid #a9a9a9;
+  width: 70%;
+  margin-block: 10px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+.Even-row {
+  background-color: #f0f0f0;
+}
+
+:root {
+  --white: #ffff;
+  --yellow: rgb(255, 98, 0);
+  --red: rgb(9, 70, 84);
+  --black: rgba(0, 0, 0, 0.937);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--white);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+  color: var(--yellow);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 10px;
+}
+
+header {
+  height: 80px;
+  background-color: var(--red);
+}
+
+.d-flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  height: 100%;
+  padding: 10px 0;
+}
+
+.logo-img {
+  width: 70px;
+}
+
+.g-10 {
+  gap: 10px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.logo-title {
+  color: var(--white);
+}
+
+.my-20 {
+  margin-block: 20px;
+}
+
+.btn {
+  padding: 10px 30px;
+  margin-block: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.rocket-reserve {
+  background-color: var(--red);
+}
+
+.rocket-unreserve {
+  background-color: rgb(220, 212, 212);
+  color: var(--black);
+}
+
+.rocket-name {
+  margin-block: 10px;
+}
+
+.reserved {
+  background-color: var(--yellow);
+  display: inline-block;
+  color: var(--black);
+}
+
+.grid-center {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 1200px;
+}
+
+.rocket-booked {
+  padding: 10px;
+  width: 30%;
+}
+
+.py {
+  padding: 10px;
+}
+
+.single-reserve {
+  font-size: 1.2rem;
+  border: 1px solid var(--black);
+  margin-block: 10px;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+}
+
+.mission-joined {
+  padding: 10px;
+  width: 40%;
+  margin-left: 2%;
+}
