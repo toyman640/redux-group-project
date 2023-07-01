@@ -143,8 +143,8 @@ Example:
 👤 **Falako Omotoyosi**
 
 - GitHub: [@toyman640](https://github.com/toyman640)
-- Twitter: [@]()
-- LinkedIn: [LinkedIn]()
+- Twitter: [@](https://twitter.com/_toyman)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/falako-omotoyosi/)
 
 
 👤 **Rabaya Rabu**
